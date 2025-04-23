@@ -1,0 +1,108 @@
+{
+  // Run code in terminal instead of output window
+  "code-runner.runInTerminal": true,
+
+  // Set the color theme for VS Code
+  "workbench.colorTheme": "Monokai",
+
+  // Set the font size for the editor
+  "editor.fontSize": 26,
+
+  // Use the Insiders update channel for C/C++ extension
+  "C_Cpp.updateChannel": "Insiders",
+
+  // Save files before running code
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+
+  // Enable zooming with mouse wheel
+  "editor.mouseWheelZoom": true,
+
+  // Clear previous output before running code
+  "code-runner.clearPreviousOutput": true,
+
+  // Default formatter for CSS files
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  },
+
+  // Disable tag verification for Live Server
+  "liveServer.settings.donotVerifyTags": true,
+
+  // Path to PHP executable for validation (leave empty if not applicable)
+  "php.validate.executablePath": "",
+
+  // Disable delete confirmation in Explorer
+  "explorer.confirmDelete": false,
+
+  // Ignore unknown @rules in CSS linting
+  "css.lint.unknownAtRules": "ignore",
+
+  // Set warning level for invalid Tailwind CSS config paths
+  "tailwindCSS.lint.invalidConfigPath": "warning",
+
+  // Disable trimming of auto-inserted whitespace
+  "editor.trimAutoWhitespace": false,
+
+  // Disable terminal link detection for RapidAPI
+  "rapidapi.terminalLink.enabled": false,
+
+  // Enable automatic fetching of Git repositories
+  "git.autofetch": true,
+
+  // Set the zoom level for the window
+  "window.zoomLevel": -1,
+
+  // Disable drag-and-drop confirmation in Explorer
+  "explorer.confirmDragAndDrop": false,
+
+  // Set the icon theme for the workbench
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Enable GitHub Copilot auto-completions in the editor
+  "github.copilot.editor.enableAutoCompletions": true,
+
+  // Disable importing React on top for React snippets
+  "reactSnippets.settings.importReactOnTop": false,
+
+  // Enable format on paste and save
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+
+  // Set the default terminal profile for Windows
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // Configure GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  // Set the font size for the integrated terminal
+  "terminal.integrated.fontSize": 18,
+
+  // Automation profile for macOS terminal (empty by default)
+  "terminal.integrated.automationProfile.osx": {},
+
+  // MCP server configuration for GitHub
+  "mcp": {
+    "servers": {
+      "github": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "GITHUB_PERSONAL_ACCESS_TOKEN",
+          "ghcr.io/github/github-mcp-server"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "<github_token>" // Replace <github_token> with your actual GitHub token
+        }
+      }
+    }
+  }
+}
